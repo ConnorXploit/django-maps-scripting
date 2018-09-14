@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interactive maps for Django web apps</title>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div id='map' class="map" style='height: 300px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiaXZhbmNvcmNvbGVzIiwiYSI6ImNpcHhuc2VlbzAwNzhoem0yeGt2dHowNzMifQ.G57kFhckY4Jq00VrVPJ2AQ';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/ivancorcoles/cjhms0cvi3dz82spapuicuest',
+                center: [-2.6685746, 42.8425345],
+                zoom: 11,
+                bearing: 180
+            });
+        </script>
+    </body>
+</html>

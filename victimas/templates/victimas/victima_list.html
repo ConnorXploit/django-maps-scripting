@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Victimas{% endblock %}
+{% block content %}
+{% include 'victimas/includes/victimas_menu.html' %}
+<main role="main">
+  <div class="container mb-4">
+    {% for victima in victima_list|dictsort:"id" reversed %}
+      <div class="row mt-3">
+        <div class="col-md-9 mx-auto">
+          <h2 class="mb-4">{{victima.title}}</h2>
+          <div>
+            <p>{{victima.content|striptags|safe|truncatechars:"200"}}</p>
+            <p><a href="{% url 'victimas:victima' victima.id victima.title|slugify %}">Leer más</a>
+              {% if request.user.is_staff %}
+                | <a href="{% url 'victimas:update' victima.id %}">Editar</a>
+                | <a href="{% url 'victimas:delete' victima.id %}">Borrar</a>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}
