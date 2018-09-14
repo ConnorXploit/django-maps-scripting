@@ -26,11 +26,18 @@ Now, our shell should change a bit and start by **(**django2env**)** C:\Whatever
 At this moment we are working in the virtual environment that we want to work in. Start installing all the requirements:
 
     pip install -r requirements.txt
+    sudo apt-get install gettext
+
 Now we can start our server:
 
     python manage.py runserver
     
 Then in your favorite Web Browser: http://127.0.0.1:8000/
+
+    python manage.py migrate
+    python manage.py createsuperuser
+    python manage.py makemigrations
+    python manage.py migrate
 
 ## More
 
