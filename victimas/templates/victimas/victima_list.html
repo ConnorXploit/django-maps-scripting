@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
-{% load static %}
-{% block title %}Victimas{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Victimas" %}{% endblock %}
 {% block content %}
 {% include 'victimas/includes/victimas_menu.html' %}
 <main role="main">
@@ -11,10 +11,10 @@
           <h2 class="mb-4">{{victima.title}}</h2>
           <div>
             <p>{{victima.content|striptags|safe|truncatechars:"200"}}</p>
-            <p><a href="{% url 'victimas:victima' victima.id victima.title|slugify %}">Leer más</a>
+            <p><a href="{% url 'victimas:victima' victima.id victima.title|slugify %}">{% trans "Leer más" %}</a>
               {% if request.user.is_staff %}
-                | <a href="{% url 'victimas:update' victima.id %}">Editar</a>
-                | <a href="{% url 'victimas:delete' victima.id %}">Borrar</a>
+                | <a href="{% url 'victimas:update' victima.id %}">{% trans "Editar" %}</a>
+                | <a href="{% url 'victimas:delete' victima.id %}">{% trans "Borrar" %}</a>
               {% endif %}
             </p>
           </div>

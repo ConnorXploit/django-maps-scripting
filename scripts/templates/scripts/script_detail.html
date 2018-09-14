@@ -1,5 +1,5 @@
 {% extends 'core/base.html' %}
-{% load static %}
+{% load static i18n %}
 {% block title %}{{script.name}}{% endblock %}
 {% block content %}
 {% include 'scripts/includes/scripts_menu.html' %}
@@ -11,7 +11,7 @@
         <div>
           {{script.content|safe}}
           {% if request.user.is_staff %}
-            <p><a href="{% url 'scripts:update' script.id %}">Editar</a></p>
+            <p><a href="{% url 'scripts:update' script.id %}">{% trans "Editar" %}</a></p>
           {% endif %}
         </div>
       </div>

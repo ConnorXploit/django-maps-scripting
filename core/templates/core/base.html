@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+{% load static i18n %}<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% block title %}{% endblock %}</title>
-    {% load static %}
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
@@ -18,39 +17,39 @@
       <!-- Navegación -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'home' %}">Playground</a>
+          <a class="navbar-brand" href="{% url 'home' %}">PentestingLab</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ned" aria-controls="ned" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="ned">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+                <a class="nav-link" href="{% url 'home' %}">{% trans "Inicio" %}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'victimas:victimas' %}">Victimas</a>
+                <a class="nav-link" href="{% url 'victimas:victimas' %}">{% trans "Victimas" %}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'profiles:list' %}">Perfiles</a>
+                <a class="nav-link" href="{% url 'profiles:list' %}">{% trans "Perfiles" %}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'scripts:scripts' %}">Scripts</a>
+                <a class="nav-link" href="{% url 'scripts:scripts' %}">{% trans "Scripts" %}</a>
               </li>
             </ul>
             <ul class="navbar-nav">
               {% if not request.user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'login' %}">Acceder</a>
+                  <a class="nav-link" href="{% url 'login' %}">{% trans "Acceder" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'signup' %}">Registro</a>
+                  <a class="nav-link" href="{% url 'signup' %}">{% trans "Registro" %}</a>
                 </li>
               {% else %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'profile' %}">Perfil</a>
+                  <a class="nav-link" href="{% url 'profile' %}">{% trans "Perfil" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}">Salir</a>
+                    <a class="nav-link" href="{% url 'logout' %}">{% trans "Salir" %}</a>
                 </li>
               {% endif %}
             </ul>

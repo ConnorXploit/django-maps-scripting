@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-14 19:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/templates/core/base.html:27 core/templates/core/home.html:3
+#: core/templates/core/home.html:7
+msgid "Inicio"
+msgstr "Home"
+
+#: core/templates/core/base.html:30
+#: victimas/templates/victimas/victima_list.html:3
+msgid "Victimas"
+msgstr "Victims"
+
+#: core/templates/core/base.html:33
+#: profiles/templates/profiles/profile_list.html:3
+msgid "Perfiles"
+msgstr "Profiles"
+
+#: core/templates/core/base.html:36
+#: scripts/templates/scripts/script_list.html:3
+msgid "Scripts"
+msgstr "Scripts"
+
+#: core/templates/core/base.html:42
+#: registration/templates/registration/login.html:26
+msgid "Acceder"
+msgstr "Login"
+
+#: core/templates/core/base.html:45
+#: registration/templates/registration/signup.html:3
+#: registration/templates/registration/signup.html:11
+msgid "Registro"
+msgstr "SignUp"
+
+#: core/templates/core/base.html:49
+#: registration/templates/registration/profile_form.html:3
+#: registration/templates/registration/profile_form.html:23
+msgid "Perfil"
+msgstr "Profile"
+
+#: core/templates/core/base.html:52
+msgid "Salir"
+msgstr "Exit"
+
+#: core/templates/core/home.html:8
+msgid "Escaneos, vulnerabilidades, reportes..."
+msgstr "Scans, vulnerabilities, reports..."
+
+#: maps/templates/maps/default.html:5
+msgid "Mapa interactivo"
+msgstr "Interactive map"
+
+#: profiles/templates/profiles/profile_detail.html:19
+msgid "Enviar mensaje"
+msgstr "Send message"
+
+#: profiles/templates/profiles/profile_list.html:23
+msgid "Ver perfil"
+msgstr "Show profile"
+
+#: registration/templates/registration/login.html:3
+#: registration/templates/registration/login.html:14
+#: registration/templates/registration/password_reset_complete.html:11
+msgid "Iniciar sesión"
+msgstr "Login"
+
+#: registration/templates/registration/login.html:11
+msgid "Te has registrado correctamente. Ya puedes acceder con tu usuario"
+msgstr ""
+"You have been registered successfully. Now you can login with your user"
+
+#: registration/templates/registration/login.html:16
+msgid "Usuario o contraseña incorrectos, prueba de nuevo."
+msgstr "User or password incorrects, try again."
+
+#: registration/templates/registration/login.html:20
+msgid "Nombre de usuario"
+msgstr "Username"
+
+#: registration/templates/registration/login.html:24
+msgid "Contraseña"
+msgstr "Password"
+
+#: registration/templates/registration/login.html:28
+msgid "¿Ha olvidado su clave? Puede restaurarla"
+msgstr "Have you forgotten you password? You can restore"
+
+#: registration/templates/registration/login.html:28
+#: registration/templates/registration/password_change_done.html:10
+#: registration/templates/registration/password_reset_confirm.html:22
+#: registration/templates/registration/profile_form.html:29
+#: registration/templates/registration/profile_form.html:30
+msgid "aquí"
+msgstr "here"
+
+#: registration/templates/registration/password_change_done.html:3
+#: registration/templates/registration/password_change_done.html:9
+msgid "Contraseña cambiada correctamente"
+msgstr "Password changed correctly"
+
+#: registration/templates/registration/password_change_done.html:10
+msgid "Puedes volver a tu perfil haciendo clic"
+msgstr "You can go back to you profile clicking right here"
+
+#: registration/templates/registration/password_change_form.html:3
+#: registration/templates/registration/password_change_form.html:11
+msgid "Cambio de contraseña"
+msgstr "Password change"
+
+#: registration/templates/registration/password_change_form.html:12
+msgid ""
+"Por favor, introduzca su contraseña antigua por seguridad, y después "
+"introduzca dos veces la nueva contraseña para verificar que la ha escrito "
+"correctamente."
+msgstr ""
+"Please, enter your actual password for security and then enter your new "
+"password twice for verifying that you wrote correctly"
+
+#: registration/templates/registration/password_change_form.html:14
+msgid "Contraseña antigua"
+msgstr "Actual password"
+
+#: registration/templates/registration/password_change_form.html:16
+msgid "Contraseña nueva"
+msgstr "New password"
+
+#: registration/templates/registration/password_change_form.html:18
+msgid "Contraseña nueva (confirmación)"
+msgstr "New password (confirmation)"
+
+#: registration/templates/registration/password_change_form.html:19
+#: registration/templates/registration/password_reset_confirm.html:18
+msgid "Cambiar mi contraseña"
+msgstr "Change my password"
+
+#: registration/templates/registration/password_reset_complete.html:3
+#: registration/templates/registration/password_reset_complete.html:9
+msgid "Restablecimiento de contraseña completado"
+msgstr "Password recovery completed"
+
+#: registration/templates/registration/password_reset_complete.html:10
+msgid ""
+"Su contraseña ha sido establecida. Ahora puede seguir adelante e iniciar "
+"sesión."
+msgstr "Your password has been recovered. Now you can login with your account."
+
+#: registration/templates/registration/password_reset_confirm.html:3
+#: registration/templates/registration/password_reset_confirm.html:12
+msgid "Escriba la nueva contraseña"
+msgstr "Enter the new password"
+
+#: registration/templates/registration/password_reset_confirm.html:13
+msgid ""
+"Por favor, introduzca su contraseña nueva dos veces para verificar que la ha "
+"escrito correctamente."
+msgstr ""
+"Please, enter your actual password for security and then enter your new "
+"password twice for verifying that you wrote correctly"
+
+#: registration/templates/registration/password_reset_confirm.html:15
+msgid "Introduce la nueva contraseña"
+msgstr "Enter the new password"
+
+#: registration/templates/registration/password_reset_confirm.html:17
+msgid "Repite la nueva contraseña"
+msgstr "Repeat the new password"
+
+#: registration/templates/registration/password_reset_confirm.html:21
+msgid "Restablecimiento de contraseñas fallido"
+msgstr "Password recovery failure"
+
+#: registration/templates/registration/password_reset_confirm.html:22
+msgid ""
+"El enlace de restablecimiento de contraseña era inválido, seguramente porque "
+"se haya usado antes. Por favor, solicite un nuevo restablecimiento de "
+"contraseña"
+msgstr ""
+"The URL for the password recovery was invalid, sure you have usedyet. "
+"Please, request another password recovery"
+
+#: registration/templates/registration/password_reset_done.html:3
+#: registration/templates/registration/password_reset_done.html:9
+msgid "Restablecimiento de contraseña enviado"
+msgstr "Password recovery sent"
+
+#: registration/templates/registration/password_reset_done.html:10
+msgid ""
+"Le hemos enviado por email las instrucciones para restablecer la contraseña, "
+"si es que existe una cuenta con la dirección electrónica que indicó. Debería "
+"recibirlas en breve."
+msgstr ""
+"We have send you an email with the instructions for the password recovery,if "
+"exists any account with the given email address. You should get the email in "
+"a while"
+
+#: registration/templates/registration/password_reset_done.html:11
+msgid ""
+"Si no recibe un correo, por favor asegúrese de que ha introducido la "
+"dirección de correo con la que se registró y verifique su carpeta de spam."
+msgstr ""
+"If you dont receive the email, please make sure you have entered the correct "
+"email address that you used to signup and verify span folder."
+
+#: registration/templates/registration/password_reset_form.html:3
+#: registration/templates/registration/password_reset_form.html:11
+msgid "Restablecer contraseña"
+msgstr "Password recovery"
+
+#: registration/templates/registration/password_reset_form.html:12
+msgid ""
+"¿Ha olvidado su clave? Introduzca su dirección de correo a continuación y le "
+"enviaremos por correo electrónico las instrucciones para establecer una "
+"nueva."
+msgstr ""
+"Have you forgotten the password? Enter the email addess and we will send you "
+"an email with the instructions for recovering with a new one."
+
+#: registration/templates/registration/password_reset_form.html:14
+msgid "Introduce tu email"
+msgstr "Enter your email"
+
+#: registration/templates/registration/password_reset_form.html:15
+#: registration/templates/registration/signup.html:13
+msgid "Confirmar"
+msgstr "Ok"
+
+#: registration/templates/registration/profile_email_form.html:3
+#: registration/templates/registration/profile_email_form.html:11
+msgid "Email"
+msgstr "Email"
+
+#: registration/templates/registration/profile_email_form.html:13
+#: registration/templates/registration/profile_form.html:32
+msgid "Actualizar"
+msgstr "Update"
+
+#: registration/templates/registration/profile_form.html:16
+msgid "¿Borrar?"
+msgstr "Delete?"
+
+#: registration/templates/registration/profile_form.html:29
+msgid "Si deseas editar tu email, haz clic"
+msgstr "If you want to edit your profile, clic here"
+
+#: registration/templates/registration/profile_form.html:30
+msgid "Y si quieres cambiar tu contraseña, haz clic"
+msgstr "And if you want to change your password, clic here"
+
+#: scripts/templates/scripts/includes/scripts_menu.html:8
+#: victimas/templates/victimas/includes/victimas_menu.html:8
+msgid "Administrar"
+msgstr "Administrate"
+
+#: scripts/templates/scripts/includes/scripts_menu.html:15
+msgid "Crear scripts"
+msgstr "Create scripts"
+
+#: scripts/templates/scripts/includes/scripts_menu.html:18
+msgid "Listar scripts"
+msgstr "List scripts"
+
+#: scripts/templates/scripts/script_confirm_delete.html:3
+msgid "Borrar script"
+msgstr "Delete script"
+
+#: scripts/templates/scripts/script_confirm_delete.html:12
+#: victimas/templates/victimas/victima_confirm_delete.html:12
+msgid "¿Estás seguro de que quieres borrar"
+msgstr "Are you sure you want to delete"
+
+#: scripts/templates/scripts/script_confirm_delete.html:13
+msgid "Sí, borrar la script"
+msgstr "Yes, delete script"
+
+#: scripts/templates/scripts/script_detail.html:14
+#: scripts/templates/scripts/script_list.html:16
+#: victimas/templates/victimas/victima_detail.html:14
+#: victimas/templates/victimas/victima_list.html:16
+msgid "Editar"
+msgstr "Edit"
+
+#: scripts/templates/scripts/script_form.html:3
+#: scripts/templates/scripts/script_form.html:13
+msgid "Crear script"
+msgstr "Create script"
+
+#: scripts/templates/scripts/script_list.html:14
+#: victimas/templates/victimas/victima_list.html:14
+msgid "Leer más"
+msgstr "Read more"
+
+#: scripts/templates/scripts/script_list.html:17
+#: victimas/templates/victimas/victima_list.html:17
+msgid "Borrar"
+msgstr "Delete"
+
+#: scripts/templates/scripts/script_update_form.html:3
+#: scripts/templates/scripts/script_update_form.html:20
+msgid "Actualizar script"
+msgstr "Update script"
+
+#: scripts/templates/scripts/script_update_form.html:13
+msgid "Script editado correctamente."
+msgstr "Script updated correctly"
+
+#: scripts/templates/scripts/script_update_form.html:14
+#: victimas/templates/victimas/victima_update_form.html:14
+msgid "Haz click para ver el resultado"
+msgstr "Click for see the result"
+
+#: victimas/templates/victimas/includes/victimas_menu.html:15
+msgid "Crear victimas"
+msgstr "Create victim"
+
+#: victimas/templates/victimas/includes/victimas_menu.html:18
+msgid "Listar victimas"
+msgstr "List victims"
+
+#: victimas/templates/victimas/victima_confirm_delete.html:3
+msgid "Borrar victima"
+msgstr "Delete victim"
+
+#: victimas/templates/victimas/victima_confirm_delete.html:13
+msgid "Sí, borrar la victima"
+msgstr "Yes, delete the victim"
+
+#: victimas/templates/victimas/victima_form.html:3
+#: victimas/templates/victimas/victima_form.html:13
+msgid "Crear victima"
+msgstr "Create victim"
+
+#: victimas/templates/victimas/victima_update_form.html:3
+#: victimas/templates/victimas/victima_update_form.html:20
+msgid "Actualizar victima"
+msgstr "Update victim"
+
+#: victimas/templates/victimas/victima_update_form.html:13
+msgid "Victima editada correctamente."
+msgstr "Victim updated correctly"
+
+#, fuzzy
+#~| msgid "Victimas"
+#~ msgid "victimas/"
+#~ msgstr "Victims/"
+
+#~ msgid "cuentas/"
+#~ msgstr "accounts/"
+
+#, fuzzy
+#~| msgid "Perfiles"
+#~ msgid "perfiles/"
+#~ msgstr "profiles/"
+
+#, fuzzy
+#~| msgid "Scripts"
+#~ msgid "scripts/"
+#~ msgstr "scripts/"
+
+#~ msgid "admin/"
+#~ msgstr "admin/"

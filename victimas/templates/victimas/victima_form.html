@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
-{% load static %}
-{% block title %}Crear victima{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Crear victima" %}{% endblock %}
 {% block content %}
 {% include 'victimas/includes/victimas_menu.html'%}
 <main role="main">
@@ -10,7 +10,7 @@
           <form action="" method="post">{% csrf_token %}
             {{ form.as_p }}
             <div class="text-center">
-              <input type="submit" class="btn btn-primary btn-block" value="Crear victima" />
+              <input type="submit" class="btn btn-primary btn-block" value="{% trans 'Crear victima' %}" />
             </div>
           </form>
       </div>

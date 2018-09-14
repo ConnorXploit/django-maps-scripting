@@ -1,5 +1,5 @@
 {% extends 'core/base.html' %}
-{% load static %}
+{% load static i18n %}
 {% block title %}{{victima.title}}{% endblock %}
 {% block content %}
 {% include 'victimas/includes/victimas_menu.html' %}
@@ -11,7 +11,7 @@
         <div>
           {{victima.content|safe}}
           {% if request.user.is_staff %}
-            <p><a href="{% url 'victimas:update' victima.id %}">Editar</a></p>
+            <p><a href="{% url 'victimas:update' victima.id %}">{% trans "Editar" %}</a></p>
           {% endif %}
         </div>
       </div>

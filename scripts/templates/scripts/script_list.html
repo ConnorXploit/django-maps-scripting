@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
-{% load static %}
-{% block title %}Scripts{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Scripts" %}{% endblock %}
 {% block content %}
 {% include 'scripts/includes/scripts_menu.html' %}
 <main role="main">
@@ -11,10 +11,10 @@
           <h2 class="mb-4">{{script.name}}</h2>
           <div>
             <p>{{script.content|striptags|safe|truncatechars:"200"}}</p>
-            <p><a href="{% url 'scripts:script' script.id script.name|slugify %}">Leer más</a>
+            <p><a href="{% url 'scripts:script' script.id script.name|slugify %}">{% trans "Leer más" %}</a>
               {% if request.user.is_staff %}
-                | <a href="{% url 'scripts:update' script.id %}">Editar</a>
-                | <a href="{% url 'scripts:delete' script.id %}">Borrar</a>
+                | <a href="{% url 'scripts:update' script.id %}">{% trans "Editar" %}</a>
+                | <a href="{% url 'scripts:delete' script.id %}">{% trans "Borrar" %}</a>
               {% endif %}
             </p>
           </div>

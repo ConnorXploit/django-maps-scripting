@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
-{% load static %}
-{% block title %}Crear script{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Crear script" %}{% endblock %}
 {% block content %}
 {% include 'scripts/includes/scripts_menu.html'%}
 <main role="main">
@@ -10,7 +10,7 @@
           <form action="" method="post">{% csrf_token %}
             {{ form.as_p }}
             <div class="text-center">
-              <input type="submit" class="btn btn-primary btn-block" value="Crear script" />
+              <input type="submit" class="btn btn-primary btn-block" value="{% trans 'Crear script' %}" />
             </div>
           </form>
       </div>

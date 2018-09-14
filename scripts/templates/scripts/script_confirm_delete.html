@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
-{% load static %}
-{% block title %}Borrar script{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Borrar script" %}{% endblock %}
 {% block content %}
 {% include 'scripts/includes/scripts_menu.html'%}
 <main role="main">
@@ -9,8 +9,8 @@
       <div class="col-md-9 mx-auto">
         <div>
           <form action="" method="post">{% csrf_token %}
-            <p>¿Estás seguro de que quieres borrar <b>"{{ object }}"</b>?</p>
-            <input type="submit" class="btn btn-primary btn-block" value="Sí, borrar la script" />
+            <p>{% trans "¿Estás seguro de que quieres borrar" %} <b>"{{ object }}"</b>?</p>
+            <input type="submit" class="btn btn-primary btn-block" value="{% trans 'Sí, borrar la script' %}" />
           </form>
         </div>
       </div>

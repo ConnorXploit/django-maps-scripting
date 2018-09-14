@@ -1,5 +1,5 @@
 {% extends 'core/base.html' %}
-{% load static %}
+{% load static i18n %}
 {% block title %}{{profile.user}}{% endblock %}
 {% block content %}
 <main role="main">
@@ -16,7 +16,7 @@
                 <img src="{% static 'registration/img/no-avatar.jpg' %}" class="img-fluid">
               {% endif %}
               {% if request.user != profile.user %}
-                <a href="{% url 'messenger:start' profile.user.username %}" class="btn btn-primary btn-sm btn-block mt-3">Enviar mensaje</a>
+                <a href="{% url 'messenger:start' profile.user.username %}" class="btn btn-primary btn-sm btn-block mt-3">{% trans "Enviar mensaje" %}</a>
               {% endif %}
             </div>
             <!-- Campos -->
