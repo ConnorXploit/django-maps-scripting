@@ -90,7 +90,7 @@ First of all, create a folder named 'locale' in your root directory of your proy
     {% load i18n %}
     {% trans "This is a message" %}
     
-Then we are going to create de translations for that. In this example im transalating to **Spanish (es)**, like this:
+Then we are going to create de translations for that. In this example im translating to **Spanish (es)**, like this:
 
     django-admin makemessages -l es
     
@@ -120,7 +120,7 @@ No we have created a new language and set some translations for a message
     cd docs/
     sphinx-quickstart
 
-Now we have new documents into the created folder docs/. Start editing index.rst for example and than:
+Now we have new documents into the created folder docs/. Start editing index.rst for example and then:
 
     make html
 
