@@ -3,6 +3,8 @@
 
 Welcome to PentestingLab project. We are working hard on this project with Django, MapBox and more.
 
+Same documentation at https://djangomaps.rtfd.io
+
 # Installation
 
 ## Downloading
