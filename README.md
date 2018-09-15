@@ -83,6 +83,22 @@ Save that file and then:
     
 No we have created a new language and set some translations for a message
 
+# Editing Read The Docs document
+
+## Installation Sphinx
+
+    pip install sphinx sphinx-autobuild
+
+## Initialize & Build
+
+    mkdir docs
+    cd docs/
+    sphinx-quickstart
+
+Now we have new documents into the created folder docs/. Start editing index.rst for example and than:
+
+    make html
+
 ## More
 
 We are working hard for uploading the next version. Wait for it

@@ -131,12 +131,31 @@ No we have created a new language and set some translations for a message
 
 For trying this, is already created, but in short words you have to create a form implementing the LANGUAGE.CODE and request.session. There are few examples to play with.
 
+Editing Read The Docs document
+==============================
+
+Installation Sphinx
+^^^^^^^^^^^^^^^^^^^
+
+    ``pip install sphinx sphinx-autobuild``
+
+Initialize & Build
+^^^^^^^^^^^^^^^^^^
+
+    ``mkdir docs``
+
+    ``cd docs/``
+
+    ``sphinx-quickstart``
+
+Now we have new documents into the created folder docs/. Start editing index.rst for example and than:
+
+    ``make html``
+
 More
 ====
 
-
-
-.. warning:: We are working hard for uploading the next version. Wait for it!
+.. warning:: We are working hard for uploading the next version. Wait for it.
 
    Proceed with caution!
 

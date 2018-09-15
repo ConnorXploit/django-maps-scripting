@@ -134,9 +134,7 @@ For trying this, is already created, but in short words you have to create a for
 More
 ====
 
-
-
-.. warning:: We are working hard for uploading the next version. Wait for it!
+.. warning:: We are working hard for uploading the next version. Wait for it.
 
    Proceed with caution!
 
