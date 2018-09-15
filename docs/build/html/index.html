@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Simple Documentation for Django and MapBox &#8212; djangomaps 0.0.1 documentation</title>
+    <title>Proyect with Django, MapBox and more &#8212; Pentesting Lab 0.0.1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -33,24 +33,123 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="simple-documentation-for-django-and-mapbox">
-<h1>Simple Documentation for Django and MapBox<a class="headerlink" href="#simple-documentation-for-django-and-mapbox" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="section" id="another-test-of-a-title">
-<h1>Another test of a title<a class="headerlink" href="#another-test-of-a-title" title="Permalink to this headline">¶</a></h1>
-<p>Here is some text explaining code:</p>
+  <div class="section" id="proyect-with-django-mapbox-and-more">
+<h1>Proyect with Django, MapBox and more<a class="headerlink" href="#proyect-with-django-mapbox-and-more" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="downloading">
+<h3>Downloading<a class="headerlink" href="#downloading" title="Permalink to this headline">¶</a></h3>
+<p>Clone it from git</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">'Hello</span> <span class="pre">Worldddd'</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Hello</span> <span class="pre">World</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/ConnorHack69/django-maps-scripting.git</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">django-maps-scripting</span></code></p>
 </div></blockquote>
+</div>
+<div class="section" id="create-virtualenv">
+<h3>Create VirtualEnv<a class="headerlink" href="#create-virtualenv" title="Permalink to this headline">¶</a></h3>
+<p>Make sure you run pip command and manage.py using an environment based on <strong>python==3.6.0</strong>. For example:</p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">django2env</span> <span class="pre">python==3.6.0</span></code></div></blockquote>
+<p>This creates and environment for our packages to be installed. We have to activate now that environment and start installing whatever we need. In our case, we have all at requirements.txt</p>
+</div>
+<div class="section" id="virtualenv-windows">
+<h3>VirtualEnv Windows<a class="headerlink" href="#virtualenv-windows" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">activate</span> <span class="pre">django2env</span></code></div></blockquote>
+</div>
+<div class="section" id="virtualenv-linux">
+<h3>VirtualEnv Linux<a class="headerlink" href="#virtualenv-linux" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">activate</span> <span class="pre">django2env</span></code></div></blockquote>
+<p>Now, our shell should change a bit and start by <strong>(django2env)</strong> /your/working/directory
+At this moment we are working in the virtual environment that we want to work in. Start installing all the requirements:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gettext</span></code></p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="running">
+<h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
+<p>Now we can start our server:</p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">runserver</span></code></div></blockquote>
+<p>Then in your favorite Web Browser: <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
+</div>
+<div class="section" id="bbdd">
+<h2>BBDD<a class="headerlink" href="#bbdd" title="Permalink to this headline">¶</a></h2>
+<p>For starting the BBDD we have to migrate and create super user:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">migrate</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">createsuperuser</span></code></p>
+</div></blockquote>
+</div>
+<div class="section" id="apps">
+<h2>Apps<a class="headerlink" href="#apps" title="Permalink to this headline">¶</a></h2>
+<p>For stating a new app, we have to type:</p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">start</span> <span class="pre">nameAppHere</span></code></div></blockquote>
+<p>Then, for implement that app, we have to add it in our <strong>settings.py</strong> on INSTALLED_APPS. Now, migrate this app changes:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">makemigrations</span> <span class="pre">nameAppHere</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">migrate</span> <span class="pre">nameAppHere</span></code></p>
+</div></blockquote>
+<p>Now, you can run the server and try your app inside the project.</p>
+</div>
+<div class="section" id="translation">
+<h2>Translation<a class="headerlink" href="#translation" title="Permalink to this headline">¶</a></h2>
+<p>If you want to translate to any other language or simply help us on translating it, there are 2 commands you have to know.</p>
+<p>First of all, create a folder named ‘locale’ in your root directory of your proyect and then edit settings.py for adding this on the bottom:</p>
+<div class="section" id="settings-py">
+<h3>settings.py<a class="headerlink" href="#settings-py" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">LOCALES</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">LOCALE_PATHS</span> <span class="pre">=</span> <span class="pre">[</span></code></p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">os.path.join(BASE_DIR,</span> <span class="pre">'locale'),</span></code></div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">LANGUAGES</span> <span class="pre">=</span> <span class="pre">[</span></code></p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">('es',</span> <span class="pre">'Español'),</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">('en',</span> <span class="pre">'English'),</span></code></p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">I18N</span> <span class="pre">=</span> <span class="pre">True</span></code></p>
+</div></blockquote>
+</div>
+<div class="section" id="html-files">
+<h3>html files<a class="headerlink" href="#html-files" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">load</span> <span class="pre">i18n</span> <span class="pre">%}</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">trans</span> <span class="pre">&quot;This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">message&quot;</span> <span class="pre">%}</span></code></p>
+</div></blockquote>
+<p>Then we are going to create de translations for that. In this example im transalating to <strong>Spanish (es)</strong>, like this:</p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">django-admin</span> <span class="pre">makemessages</span> <span class="pre">-l</span> <span class="pre">es</span></code></div></blockquote>
+<p>So now we have inside ‘locale’ directory some files. We need to edit <strong>po</strong> extension file named one.
+Inside we can see some lines and we will see something like this referencing to your html template tag name created before.
+The first line is the key for the translation. If we change that, the html should not work. So only write into <strong>msgstr</strong> the translation:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">#:</span> <span class="pre">core/templates/core/home.html:7</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">msgid</span> <span class="pre">&quot;This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">message&quot;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">msgstr</span> <span class="pre">&quot;Esto</span> <span class="pre">es</span> <span class="pre">un</span> <span class="pre">mensaje&quot;</span></code></p>
+</div></blockquote>
+<p>Save that file and then:</p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">django-admin</span> <span class="pre">compilemessages</span></code></div></blockquote>
+<p>No we have created a new language and set some translations for a message</p>
+<p>For trying this, is already created, but in short words you have to create a form implementing the LANGUAGE.CODE and request.session. There are few examples to play with.</p>
+</div>
+</div>
+<div class="section" id="more">
+<h2>More<a class="headerlink" href="#more" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p>Here be dragons! This topic covers a number of options that
-might alter your database.</p>
+<p>We are working hard for uploading the next version. Wait for it!</p>
 <p class="last">Proceed with caution!</p>
 </div>
 <div class="section" id="guide">
-<h2>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h2>
+<h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
@@ -60,12 +159,13 @@ might alter your database.</p>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
 <li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
 <li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
 </ul>
+</div>
 </div>
 
 
@@ -75,7 +175,7 @@ might alter your database.</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="#">djangomaps</a></h1>
+<h1 class="logo"><a href="#">Pentesting Lab</a></h1>
 
 
 

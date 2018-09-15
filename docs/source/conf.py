@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'djangomaps'
+project = 'Pentesting Lab'
 copyright = '2018, Connor'
 author = 'Connor'
 
