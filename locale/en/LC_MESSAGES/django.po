@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-14 19:24+0200\n"
+"POT-Creation-Date: 2018-09-14 21:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,12 +50,17 @@ msgid "Registro"
 msgstr "SignUp"
 
 #: core/templates/core/base.html:49
+#: messenger/templates/messenger/thread_list.html:3
+msgid "Mensajes"
+msgstr "Messages"
+
+#: core/templates/core/base.html:52
 #: registration/templates/registration/profile_form.html:3
 #: registration/templates/registration/profile_form.html:23
 msgid "Perfil"
 msgstr "Profile"
 
-#: core/templates/core/base.html:52
+#: core/templates/core/base.html:55
 msgid "Salir"
 msgstr "Exit"
 
@@ -67,9 +72,32 @@ msgstr "Scans, vulnerabilities, reports..."
 msgid "Mapa interactivo"
 msgstr "Interactive map"
 
+#: messenger/templates/messenger/thread_detail.html:3
+msgid "Hilo"
+msgstr "Thread"
+
+#: messenger/templates/messenger/thread_detail.html:35
+#: messenger/templates/messenger/thread_detail.html:56
+#: messenger/templates/messenger/thread_list.html:32
+msgid "Hace"
+msgstr "ago"
+
+#: messenger/templates/messenger/thread_detail.html:48
+msgid "Mensajes con"
+msgstr "Messages with"
+
+#: messenger/templates/messenger/thread_detail.html:62
+msgid "Escribe tu mensaje aquí"
+msgstr "Write you message here"
+
+#: messenger/templates/messenger/thread_detail.html:63
 #: profiles/templates/profiles/profile_detail.html:19
 msgid "Enviar mensaje"
 msgstr "Send message"
+
+#: messenger/templates/messenger/thread_list.html:42
+msgid "Selecciona un hilo de conversación de tu panel izquierdo."
+msgstr "Select a conversation thread from left panel."
 
 #: profiles/templates/profiles/profile_list.html:23
 msgid "Ver perfil"

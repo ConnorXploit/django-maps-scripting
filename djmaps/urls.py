@@ -23,6 +23,7 @@ from django.urls import path
 from victimas.urls import victimas_patterns
 from profiles.urls import profiles_patterns
 from scripts.urls import scripts_patterns
+from messenger.urls import messenger_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -42,6 +43,8 @@ urlpatterns += i18n_patterns(
     path('scripts/', include(scripts_patterns)),
     # Map
     path('maps/', include('maps.urls')),
+    # Paths de messenger
+    path('messenger/', include(messenger_patterns)),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ckeditor',
+    'messenger',
     'core',
     'scripts',
     'victimas.apps.VictimasConfig',

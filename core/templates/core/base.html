@@ -45,9 +45,12 @@
                   <a class="nav-link" href="{% url 'signup' %}">{% trans "Registro" %}</a>
                 </li>
               {% else %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'profile' %}">{% trans "Perfil" %}</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'messenger:list' %}">{% trans "Mensajes" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'profile' %}">{% trans "Perfil" %}</a>
+              </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">{% trans "Salir" %}</a>
                 </li>
