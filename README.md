@@ -28,6 +28,8 @@ This creates and environment for our packages to be installed. We have to activa
 
     source activate django2env
     
+## Requirements
+    
 Now, our shell should change a bit and start by **(django2env)** /your/working/directory
 At this moment we are working in the virtual environment that we want to work in. Start installing all the requirements:
 
