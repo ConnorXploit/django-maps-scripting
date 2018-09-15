@@ -1,9 +1,29 @@
-Simple Documentation for Django and MapBox!
-===========================================
+Simple Documentation for Django and MapBox
+==========================================
+
+Another test of a title
+=======================
+
+Here is some text explaining code:
+
+    ``print 'Hello Worldddd'``
+    
+    ``>> Hello World``
+
+.. warning:: Here be dragons! This topic covers a number of options that
+   might alter your database.
+
+   Proceed with caution!
+
+
+Guide
+^^^^^
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   license
+   help
 
 
 

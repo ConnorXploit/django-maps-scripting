@@ -6,14 +6,11 @@ Another test of a title
 
 Here is some text explaining code:
 
-    ``print 'Hello Worldddd'``
+    code-block:: python
+    :emphasize-lines: 3,5
     
-    ``>> Hello World``
-
-.. warning:: Here be dragons! This topic covers a number of options that
-   might alter your database.
-
-   Proceed with caution!
+    print 'Hello Worldddd'
+    >> Hello World
 
 
 Guide

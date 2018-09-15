@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/connor/anaconda2/envs/djangomaps/bin/python"
+    "python.pythonPath": "/home/connor/anaconda2/envs/djangomaps/bin/python",
+    "restructuredtext.confPath": "/media/connor/Datos/DjangoProjects/django-maps-scripting/docs/source"
 }
