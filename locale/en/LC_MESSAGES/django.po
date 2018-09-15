@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-14 21:54+0200\n"
+"POT-Creation-Date: 2018-09-15 15:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,35 +38,43 @@ msgstr "Profiles"
 msgid "Scripts"
 msgstr "Scripts"
 
-#: core/templates/core/base.html:42
+#: core/templates/core/base.html:39
+msgid "Herramientas"
+msgstr "Tools"
+
+#: core/templates/core/base.html:45
 #: registration/templates/registration/login.html:26
 msgid "Acceder"
 msgstr "Login"
 
-#: core/templates/core/base.html:45
+#: core/templates/core/base.html:48
 #: registration/templates/registration/signup.html:3
 #: registration/templates/registration/signup.html:11
 msgid "Registro"
 msgstr "SignUp"
 
-#: core/templates/core/base.html:49
+#: core/templates/core/base.html:52
 #: messenger/templates/messenger/thread_list.html:3
 msgid "Mensajes"
 msgstr "Messages"
 
-#: core/templates/core/base.html:52
+#: core/templates/core/base.html:55
 #: registration/templates/registration/profile_form.html:3
 #: registration/templates/registration/profile_form.html:23
 msgid "Perfil"
 msgstr "Profile"
 
-#: core/templates/core/base.html:55
+#: core/templates/core/base.html:58
 msgid "Salir"
 msgstr "Exit"
 
 #: core/templates/core/home.html:8
 msgid "Escaneos, vulnerabilidades, reportes..."
 msgstr "Scans, vulnerabilities, reports..."
+
+#: docs/build/html/_sources/index.rst.txt:110
+msgid "This is a message"
+msgstr ""
 
 #: maps/templates/maps/default.html:5
 msgid "Mapa interactivo"
@@ -76,21 +84,21 @@ msgstr "Interactive map"
 msgid "Hilo"
 msgstr "Thread"
 
-#: messenger/templates/messenger/thread_detail.html:35
-#: messenger/templates/messenger/thread_detail.html:56
+#: messenger/templates/messenger/thread_detail.html:36
+#: messenger/templates/messenger/thread_detail.html:57
 #: messenger/templates/messenger/thread_list.html:32
 msgid "Hace"
 msgstr "ago"
 
-#: messenger/templates/messenger/thread_detail.html:48
+#: messenger/templates/messenger/thread_detail.html:49
 msgid "Mensajes con"
 msgstr "Messages with"
 
-#: messenger/templates/messenger/thread_detail.html:62
+#: messenger/templates/messenger/thread_detail.html:63
 msgid "Escribe tu mensaje aquí"
 msgstr "Write you message here"
 
-#: messenger/templates/messenger/thread_detail.html:63
+#: messenger/templates/messenger/thread_detail.html:64
 #: profiles/templates/profiles/profile_detail.html:19
 msgid "Enviar mensaje"
 msgstr "Send message"

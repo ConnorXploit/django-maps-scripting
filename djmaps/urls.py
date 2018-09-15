@@ -23,6 +23,7 @@ from django.urls import path
 from victimas.urls import victimas_patterns
 from profiles.urls import profiles_patterns
 from scripts.urls import scripts_patterns
+from tools.urls import tools_patterns
 from messenger.urls import messenger_patterns
 
 urlpatterns = [
@@ -41,6 +42,8 @@ urlpatterns += i18n_patterns(
     path('profiles/', include(profiles_patterns)),
     # Paths de profiles
     path('scripts/', include(scripts_patterns)),
+    # Paths de tools
+    path('tools/', include(tools_patterns)),
     # Map
     path('maps/', include('maps.urls')),
     # Paths de messenger

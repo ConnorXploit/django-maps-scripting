@@ -30,13 +30,16 @@
                 <a class="nav-link" href="{% url 'victimas:victimas' %}">{% trans "Victimas" %}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'profiles:list' %}">{% trans "Perfiles" %}</a>
+                <a class="nav-link" href="{% url 'scripts:scripts' %}">{% trans "Scripts" %}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'scripts:scripts' %}">{% trans "Scripts" %}</a>
+                <a class="nav-link" href="{% url 'tools:tools' %}">{% trans "Herramientas" %}</a>
               </li>
             </ul>
             <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'profiles:list' %}">{% trans "Perfiles" %}</a>
+              </li>
               {% if not request.user.is_authenticated %}
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'login' %}">{% trans "Acceder" %}</a>

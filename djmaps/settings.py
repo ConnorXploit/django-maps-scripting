@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'messenger',
     'core',
+    'tools',
     'scripts',
     'victimas.apps.VictimasConfig',
     'maps',

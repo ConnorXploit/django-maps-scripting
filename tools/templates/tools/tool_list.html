@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static i18n %}
+{% block title %}{% trans "Herramientas" %}{% endblock %}
+{% block content %}
+{% include 'tools/includes/tools_menu.html' %}
+<main role="main">
+  <div class="container mb-4">
+    {% for tool in tool_list|dictsort:"id" reversed %}
+      <div class="row mt-3">
+        <div class="col-md-9 mx-auto">
+          <h2 class="mb-4">{{tool.name}}</h2>
+          <div>
+            <p>{{tool.content|striptags|safe|truncatechars:"200"}}</p>
+            <p><a href="{% url 'tools:tool' tool.id tool.name|slugify %}">{% trans "Leer más" %}</a>
+              {% if request.user.is_staff %}
+                | <a href="{% url 'tools:update' tool.id %}">{% trans "Editar" %}</a>
+                | <a href="{% url 'tools:delete' tool.id %}">{% trans "Borrar" %}</a>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}
