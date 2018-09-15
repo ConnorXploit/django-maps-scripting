@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-15 15:55+0200\n"
+"POT-Creation-Date: 2018-09-15 16:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,18 +29,18 @@ msgid "Victimas"
 msgstr "Victims"
 
 #: core/templates/core/base.html:33
-#: profiles/templates/profiles/profile_list.html:3
-msgid "Perfiles"
-msgstr "Profiles"
-
-#: core/templates/core/base.html:36
 #: scripts/templates/scripts/script_list.html:3
 msgid "Scripts"
 msgstr "Scripts"
 
-#: core/templates/core/base.html:39
+#: core/templates/core/base.html:36 tools/templates/tools/tool_list.html:3
 msgid "Herramientas"
 msgstr "Tools"
+
+#: core/templates/core/base.html:41
+#: profiles/templates/profiles/profile_list.html:3
+msgid "Perfiles"
+msgstr "Profiles"
 
 #: core/templates/core/base.html:45
 #: registration/templates/registration/login.html:26
@@ -74,7 +74,7 @@ msgstr "Scans, vulnerabilities, reports..."
 
 #: docs/build/html/_sources/index.rst.txt:110
 msgid "This is a message"
-msgstr ""
+msgstr "This is a message"
 
 #: maps/templates/maps/default.html:5
 msgid "Mapa interactivo"
@@ -300,6 +300,7 @@ msgid "Y si quieres cambiar tu contraseña, haz clic"
 msgstr "And if you want to change your password, clic here"
 
 #: scripts/templates/scripts/includes/scripts_menu.html:8
+#: tools/templates/tools/includes/tools_menu.html:8
 #: victimas/templates/victimas/includes/victimas_menu.html:8
 msgid "Administrar"
 msgstr "Administrate"
@@ -317,16 +318,21 @@ msgid "Borrar script"
 msgstr "Delete script"
 
 #: scripts/templates/scripts/script_confirm_delete.html:12
+#: tools/templates/tools/tool_confirm_delete.html:12
 #: victimas/templates/victimas/victima_confirm_delete.html:12
 msgid "¿Estás seguro de que quieres borrar"
 msgstr "Are you sure you want to delete"
 
 #: scripts/templates/scripts/script_confirm_delete.html:13
-msgid "Sí, borrar la script"
+#, fuzzy
+#| msgid "Sí, borrar la script"
+msgid "Sí, borrar el script"
 msgstr "Yes, delete script"
 
 #: scripts/templates/scripts/script_detail.html:14
 #: scripts/templates/scripts/script_list.html:16
+#: tools/templates/tools/tool_detail.html:14
+#: tools/templates/tools/tool_list.html:16
 #: victimas/templates/victimas/victima_detail.html:14
 #: victimas/templates/victimas/victima_list.html:16
 msgid "Editar"
@@ -338,11 +344,13 @@ msgid "Crear script"
 msgstr "Create script"
 
 #: scripts/templates/scripts/script_list.html:14
+#: tools/templates/tools/tool_list.html:14
 #: victimas/templates/victimas/victima_list.html:14
 msgid "Leer más"
 msgstr "Read more"
 
 #: scripts/templates/scripts/script_list.html:17
+#: tools/templates/tools/tool_list.html:17
 #: victimas/templates/victimas/victima_list.html:17
 msgid "Borrar"
 msgstr "Delete"
@@ -357,9 +365,37 @@ msgid "Script editado correctamente."
 msgstr "Script updated correctly"
 
 #: scripts/templates/scripts/script_update_form.html:14
+#: tools/templates/tools/tool_update_form.html:14
 #: victimas/templates/victimas/victima_update_form.html:14
 msgid "Haz click para ver el resultado"
 msgstr "Click for see the result"
+
+#: tools/templates/tools/includes/tools_menu.html:15
+#: tools/templates/tools/tool_form.html:3
+#: tools/templates/tools/tool_form.html:13
+msgid "Crear herramienta"
+msgstr "Create tool"
+
+#: tools/templates/tools/includes/tools_menu.html:18
+msgid "Listar herramientas"
+msgstr "List tools"
+
+#: tools/templates/tools/tool_confirm_delete.html:3
+msgid "Borrar herramienta"
+msgstr "Remove tool"
+
+#: tools/templates/tools/tool_confirm_delete.html:13
+msgid "Sí, borrar la herramienta"
+msgstr "Yes, delete tool"
+
+#: tools/templates/tools/tool_update_form.html:3
+#: tools/templates/tools/tool_update_form.html:20
+msgid "Actualizar herramienta"
+msgstr "Update script"
+
+#: tools/templates/tools/tool_update_form.html:13
+msgid "tool editado correctamente."
+msgstr "Script updated correctly"
 
 #: victimas/templates/victimas/includes/victimas_menu.html:15
 msgid "Crear victimas"
@@ -390,6 +426,11 @@ msgstr "Update victim"
 #: victimas/templates/victimas/victima_update_form.html:13
 msgid "Victima editada correctamente."
 msgstr "Victim updated correctly"
+
+#, fuzzy
+#~| msgid "Herramientas"
+#~ msgid "Crear herramientas"
+#~ msgstr "Create tools"
 
 #, fuzzy
 #~| msgid "Victimas"
