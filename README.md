@@ -58,7 +58,7 @@ For starting the BBDD we have to migrate and create super user:
 
 For stating a new app, we have to type:
 
-    ``python manage.py start nameAppHere``
+    python manage.py start nameAppHere
 
 Then, for implement that app, we have to add it in our **settings.py** on INSTALLED_APPS. Now, migrate this app changes:
 
