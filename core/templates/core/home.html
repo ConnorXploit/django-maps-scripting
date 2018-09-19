@@ -6,6 +6,7 @@
   <div style="padding-top:50px; text-align:center;">
     <h1>{% trans "Inicio" %}</h1>
     <p class="lead">{% trans "Escaneos, vulnerabilidades, reportes..." %}</p>
+    <!-- Language Selector -->
     <div class="pl-2">
       <form action="{% url 'set_language' %}" method="POST">{% csrf_token %}
         <input type="hidden" name="next" value="{{ redirect_to }}" />
@@ -21,6 +22,8 @@
         </select>
       </form>
     </div>
+    <!-- End Language Selector -->
+    {% block victimas %}{% endblock %}
   </div>
 </div>
 {% endblock %}

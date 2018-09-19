@@ -3,7 +3,7 @@ from .models import Victima
 
 # Register your models here.
 class VictimaAdmin(admin.ModelAdmin):
-    list_display = ('title', 'order')
+    list_display = ('title', 'imagen', 'order')
     class Media:
         css = {
             'all': ('pages/css/custom_ckeditor.css',)

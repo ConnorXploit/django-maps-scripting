@@ -3,7 +3,7 @@ from .models import Tool
 
 # Register your models here.
 class ToolAdmin(admin.ModelAdmin):
-    list_display = ('name', 'link', 'order')
+    list_display = ('name', 'imagen', 'link', 'order')
     class Media:
         css = {
             'all': ('pages/css/custom_ckeditor.css',)

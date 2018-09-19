@@ -9,17 +9,25 @@
       <div class="row mt-3">
         <div class="col-md-9 mx-auto">
           <h2 class="mb-4">{{script.name}}</h2>
+          {% if script.link %}
+            <a href="{{ script.link }}" target="_blank">
+          {% endif %}
+          <img src="{{ script.imagen_url }}" alt="Avatar" style="width: 100px; height: 100px; border-radius:50%" class="mb-4">
+          {% if script.link %}
+            </a>
+          {% endif %}
           <div>
-            <p>{{script.content|striptags|safe|truncatechars:"200"}}</p>
-            <p><a href="{% url 'scripts:script' script.id script.name|slugify %}">{% trans "Leer más" %}</a>
+            <p>{{script.content|safe|truncatechars:"200"}}</p>
+            <p><a href="{% url 'scripts:script' script.id script.name|slugify %}" class="btn btn-primary btn-sm m-2 mt-3">{% trans 'Leer más' %}</a>
               {% if request.user.is_staff %}
-                | <a href="{% url 'scripts:update' script.id %}">{% trans "Editar" %}</a>
-                | <a href="{% url 'scripts:delete' script.id %}">{% trans "Borrar" %}</a>
+                <a href="{% url 'scripts:update' script.id %}" class="btn btn-info btn-sm m-2 mt-3">{% trans 'Editar' %}</a>
+                <a href="{% url 'scripts:delete' script.id %}" class="btn btn-danger btn-sm m-2 mt-3">{% trans 'Borrar' %}</a>
               {% endif %}
             </p>
           </div>
         </div>
       </div>
+      {% if not forloop.last %}<hr>{% endif %}
     {% endfor %}
   </div>
 </main>

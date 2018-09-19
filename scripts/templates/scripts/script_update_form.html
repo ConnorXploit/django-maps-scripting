@@ -14,7 +14,7 @@
               <a href="{% url 'scripts:script' script.id script.name|slugify %}">{% trans "Haz click para ver el resultado" %}</a>
             </p>
           {% endif %}
-          <form action="" method="post">{% csrf_token %}
+          <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
               {{ form.as_p }}
               <div class="text-center">
                 <input type="submit" class="btn btn-primary btn-block" value="{% trans 'Actualizar script' %}" />

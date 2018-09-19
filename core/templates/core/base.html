@@ -17,14 +17,14 @@
       <!-- Navegación -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'home' %}">PentestingLab</a>
+          <a class="navbar-brand" href="{% url 'inicio:inicio' %}">PentestingLab</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ned" aria-controls="ned" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="ned">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">{% trans "Inicio" %}</a>
+                <a class="nav-link" href="{% url 'inicio:inicio' %}">{% trans "Inicio" %}</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'victimas:victimas' %}">{% trans "Victimas" %}</a>

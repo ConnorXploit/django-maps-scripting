@@ -12,10 +12,12 @@
     <div class="collapse navbar-collapse" id="nep">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'scripts:create' %}"><i>{% trans "Crear scripts" %}</i></a>
+            {% url 'scripts:create' as scripts_create %}
+          <a class="nav-link {% if request.path == scripts_create %}active{% endif %}" href="{% url 'scripts:create' %}"><i>{% trans "Crear scripts" %}</i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'scripts:scripts' %}"><i>{% trans "Listar scripts" %}</i></a>
+            {% url 'scripts:scripts' as scripts_scripts %}
+          <a class="nav-link {% if request.path == scripts_scripts %}active{% endif %}" href="{% url 'scripts:scripts' %}"><i>{% trans "Listar scripts" %}</i></a>
         </li>
       </ul>
     </div>

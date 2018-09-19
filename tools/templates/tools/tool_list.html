@@ -9,17 +9,25 @@
       <div class="row mt-3">
         <div class="col-md-9 mx-auto">
           <h2 class="mb-4">{{tool.name}}</h2>
+          {% if tool.link %}
+            <a href="{{ tool.link }}" target="_blank">
+          {% endif %}
+          <img src="{{ tool.imagen_url }}" alt="Avatar" style="width: 100px; height: 100px; border-radius:50%" class="mb-4">
+          {% if tool.link %}
+            </a>
+          {% endif %}
           <div>
-            <p>{{tool.content|striptags|safe|truncatechars:"200"}}</p>
-            <p><a href="{% url 'tools:tool' tool.id tool.name|slugify %}">{% trans "Leer más" %}</a>
+            <p>{{tool.content|safe|truncatechars:"200"}}</p>
+            <p><a href="{% url 'tools:tool' tool.id tool.name|slugify %}" class="btn btn-primary btn-sm m-2 mt-3">{% trans 'Leer más' %}</a>
               {% if request.user.is_staff %}
-                | <a href="{% url 'tools:update' tool.id %}">{% trans "Editar" %}</a>
-                | <a href="{% url 'tools:delete' tool.id %}">{% trans "Borrar" %}</a>
+                <a href="{% url 'tools:update' tool.id %}" class="btn btn-info btn-sm m-2 mt-3">{% trans 'Editar' %}</a>
+                <a href="{% url 'tools:delete' tool.id %}" class="btn btn-danger btn-sm m-2 mt-3">{% trans 'Borrar' %}</a>
               {% endif %}
             </p>
           </div>
         </div>
       </div>
+      {% if not forloop.last %}<hr>{% endif %}
     {% endfor %}
   </div>
 </main>

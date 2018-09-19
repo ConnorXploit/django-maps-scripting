@@ -20,6 +20,7 @@ from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.urls import path
 #from django.utils.translation import gettext_lazy as _
+from core.urls import inicio_patterns
 from victimas.urls import victimas_patterns
 from profiles.urls import profiles_patterns
 from scripts.urls import scripts_patterns
@@ -32,7 +33,8 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('', include('core.urls')),
+    # Paths de Home
+    path('', include(inicio_patterns)),
     #path(_('admin/'), admin.site.urls),
     path('victimas/', include(victimas_patterns)),
     # Paths de Auth
