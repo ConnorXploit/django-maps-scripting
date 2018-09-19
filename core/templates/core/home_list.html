@@ -18,9 +18,13 @@
                   {% else %}
                     <a href="{% url 'victimas:victima' victima.id victima.title|slugify %}">
                   {% endif %}
-                  <img src="{{ victima.imagen_url }}" alt="Avatar" style="width: 100px; height: 100px; border-radius:50%" class="mb-4"></a>
+                  {% if victima.imagen_url == "/media/victimaimages/victima.png" %}
+                    <img src="{{ victima.imagen_url }}" alt="Avatar" style="width: 60px; height: 60px;" class="mb-1"></a>
+                  {% else %}
+                    <img src="{{ victima.imagen_url }}" alt="Avatar" style="width: 100px; height: 100px; border-radius:50%" class="mb-4"></a>
+                  {% endif %}
                 </p>
-                <p>{{victima.content|safe|truncatechars:"200"}}</p>
+                <p>{{victima.content|safe|truncatechars:"100"}}</p>
                 <p><a href="{% url 'victimas:victima' victima.id victima.title|slugify %}" class="btn btn-primary btn-sm btn-block mt-3">{% trans "Leer más" %}</a></p>
               </div>
             </div>
@@ -59,9 +63,13 @@
                   {% else %}
                     <a href="{% url 'scripts:script' script.id script.name|slugify %}">
                   {% endif %}
-                  <img src="{{ script.imagen_url }}" alt="Avatar" style="width: 100px; height: 100px; border-radius:50%" class="mb-4"></a>
+                  {% if script.imagen_url == "/media/scriptimages/script.png" %}
+                    <img src="{{ script.imagen_url }}" alt="Avatar" style="width: 60px; height: 60px;" class="mb-1"></a>
+                  {% else %}
+                    <img src="{{ script.imagen_url }}" alt="Avatar" style="width: 100px; height: 100px; border-radius:50%" class="mb-4"></a>
+                  {% endif %}
                 </p>
-                <p>{{script.content|safe|truncatechars:"200"}}</p>
+                <p>{{script.content|safe|truncatechars:"100"}}</p>
                 <p><a href="{% url 'scripts:script' script.id script.name|slugify %}" class="btn btn-primary btn-sm btn-block mt-3">{% trans 'Leer más' %}</a>
                 </p>
               </div>
@@ -101,9 +109,13 @@
                   {% else %}
                     <a href="{% url 'tools:tool' tool.id tool.name|slugify %}">
                   {% endif %}
-                  <img src="{{ tool.imagen_url }}" alt="Avatar" style="width: 100px; height: 100px; border-radius:50%" class="mb-4"></a>
+                  {% if tool.imagen_url == "/media/toolimages/tool.png" %}
+                    <img src="{{ tool.imagen_url }}" alt="Avatar" style="width: 60px; height: 60px;" class="mb-1"></a>
+                  {% else %}
+                    <img src="{{ tool.imagen_url }}" alt="Avatar" style="width: 100px; height: 100px; border-radius:50%" class="mb-4"></a>
+                  {% endif %}
                 </p>
-                <p>{{tool.content|safe|truncatechars:"200"}}</p>
+                <p>{{tool.content|safe|truncatechars:"100"}}</p>
                 <p><a href="{% url 'tools:tool' tool.id tool.name|slugify %}" class="btn btn-primary btn-sm btn-block mt-3">{% trans 'Leer más' %}</a>
                 </p>
               </div>

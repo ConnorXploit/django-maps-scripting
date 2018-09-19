@@ -17,7 +17,7 @@
         </li>
         <li class="nav-item">
             {% url 'scripts:scripts' as scripts_scripts %}
-          <a class="nav-link {% if request.path == scripts_scripts %}active{% endif %}" href="{% url 'scripts:scripts' %}"><i>{% trans "Listar scripts" %}</i></a>
+          <a class="nav-link {% if request.path == scripts_scripts %}active{% endif %}" href="{% url 'scripts:scripts' %}"><i>{% trans "Lista de scripts" %}</i></a>
         </li>
       </ul>
     </div>
