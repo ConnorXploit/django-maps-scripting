@@ -25,8 +25,8 @@ msgstr "Home"
 
 #: core/templates/core/base.html:30 core/templates/core/home_list.html:7
 #: victimas/templates/victimas/victima_list.html:3
-msgid "Victimas"
-msgstr "Victims"
+msgid "Objetivos"
+msgstr "Objetives"
 
 #: core/templates/core/base.html:33 core/templates/core/home_list.html:52
 #: scripts/templates/scripts/script_list.html:3
@@ -87,11 +87,11 @@ msgstr "There isn't any victim on the list"
 
 #: core/templates/core/home_list.html:40 core/templates/core/home_list.html:86
 #: victimas/templates/victimas/includes/victimas_menu.html:16
-msgid "Crear victimas"
+msgid "Crear objetivos"
 msgstr "Create victim"
 
 #: core/templates/core/home_list.html:43 core/templates/core/home_list.html:89
-msgid "Listar victimas"
+msgid "Listar objetivos"
 msgstr "List victims"
 
 #: core/templates/core/home_list.html:82
@@ -431,30 +431,30 @@ msgid "Herramienta editada correctamente."
 msgstr "Tool updated correctly"
 
 #: victimas/templates/victimas/includes/victimas_menu.html:20
-msgid "Lista de victimas"
-msgstr "Victims list"
+msgid "Lista de objetivos"
+msgstr "Objetives list"
 
 #: victimas/templates/victimas/victima_confirm_delete.html:3
-msgid "Borrar victima"
-msgstr "Delete victim"
+msgid "Borrar objetivo"
+msgstr "Delete objective"
 
 #: victimas/templates/victimas/victima_confirm_delete.html:13
-msgid "Sí, borrar la victima"
-msgstr "Yes, delete the victim"
+msgid "Sí, borrar el objetivo"
+msgstr "Yes, delete the objetive"
 
 #: victimas/templates/victimas/victima_form.html:3
 #: victimas/templates/victimas/victima_form.html:13
-msgid "Crear victima"
-msgstr "Create victim"
+msgid "Crear objetivo"
+msgstr "Create objetive"
 
 #: victimas/templates/victimas/victima_update_form.html:3
 #: victimas/templates/victimas/victima_update_form.html:20
-msgid "Actualizar victima"
-msgstr "Update victim"
+msgid "Actualizar objetivo"
+msgstr "Update objetive"
 
 #: victimas/templates/victimas/victima_update_form.html:13
-msgid "Victima editada correctamente."
-msgstr "Victim updated correctly"
+msgid "Objetivo editado correctamente."
+msgstr "Objetive updated correctly"
 
 #~ msgid "Script editado correctamente."
 #~ msgstr "Script updated correctly"

@@ -19,8 +19,8 @@
           {{victima.content|safe}}
           {% if request.user.is_staff %}
             <p>
-              <a href="{% url 'victimas:update' victima.id %}" class="btn btn-info btn-sm m-2 mt-3">{% trans 'Editar' %}</a>
-              <a href="{% url 'victimas:delete' victima.id %}" class="btn btn-danger btn-sm m-2 mt-3">{% trans 'Borrar' %}</a>
+              <a href="{% url 'objetivos:update' victima.id %}" class="btn btn-info btn-sm m-2 mt-3">{% trans 'Editar' %}</a>
+              <a href="{% url 'objetivos:delete' victima.id %}" class="btn btn-danger btn-sm m-2 mt-3">{% trans 'Borrar' %}</a>
             </p>
           {% endif %}
         </div>

@@ -1,0 +1,447 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-21 15:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\core\templates\core\base.html:27 .\core\templates\core\home.html:3
+#: .\core\templates\core\home.html:7
+msgid "Inicio"
+msgstr ""
+
+#: .\core\templates\core\base.html:30 .\core\templates\core\home_list.html:7
+#: .\victimas\templates\victimas\victima_list.html:3
+msgid "Objetivos"
+msgstr ""
+
+#: .\core\templates\core\base.html:33 .\core\templates\core\home_list.html:52
+#: .\scripts\templates\scripts\script_list.html:3
+msgid "Scripts"
+msgstr ""
+
+#: .\core\templates\core\base.html:36 .\core\templates\core\home_list.html:98
+#: .\tools\templates\tools\tool_list.html:3
+msgid "Herramientas"
+msgstr ""
+
+#: .\core\templates\core\base.html:41
+#: .\profiles\templates\profiles\profile_list.html:3
+msgid "Perfiles"
+msgstr ""
+
+#: .\core\templates\core\base.html:45
+#: .\registration\templates\registration\login.html:26
+msgid "Acceder"
+msgstr ""
+
+#: .\core\templates\core\base.html:48
+#: .\registration\templates\registration\signup.html:3
+#: .\registration\templates\registration\signup.html:11
+msgid "Registro"
+msgstr ""
+
+#: .\core\templates\core\base.html:52
+#: .\messenger\templates\messenger\thread_list.html:3
+msgid "Mensajes"
+msgstr ""
+
+#: .\core\templates\core\base.html:55
+#: .\registration\templates\registration\profile_form.html:3
+#: .\registration\templates\registration\profile_form.html:23
+msgid "Perfil"
+msgstr ""
+
+#: .\core\templates\core\base.html:58
+msgid "Salir"
+msgstr ""
+
+#: .\core\templates\core\home.html:8
+msgid "Escaneos, vulnerabilidades, reportes..."
+msgstr ""
+
+#: .\core\templates\core\home_list.html:28
+#: .\core\templates\core\home_list.html:73
+#: .\core\templates\core\home_list.html:119
+#: .\scripts\templates\scripts\script_list.html:25
+#: .\tools\templates\tools\tool_list.html:25
+#: .\victimas\templates\victimas\victima_list.html:25
+msgid "Leer mÃ¡s"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:36
+msgid "No hay ninguna vÃ­ctima en la lista"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:40
+#: .\victimas\templates\victimas\includes\victimas_menu.html:16
+#: .\victimas\templates\victimas\victima_form.html:3
+#: .\victimas\templates\victimas\victima_form.html:13
+msgid "Crear objetivo"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:43
+msgid "Listar objetivos"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:82
+msgid "No hay ningun script en la lista"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:86
+msgid "Crear victimas"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:89
+msgid "Listar victimas"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:128
+msgid "No hay ninguna herramienta en la lista"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:132
+msgid "Crear herramientas"
+msgstr ""
+
+#: .\core\templates\core\home_list.html:135
+msgid "Listar herramientas"
+msgstr ""
+
+#: .\docs\build\html\_sources\index.rst.txt:110
+msgid "This is a message"
+msgstr ""
+
+#: .\maps\templates\maps\default.html:5
+msgid "Mapa interactivo"
+msgstr ""
+
+#: .\messenger\templates\messenger\thread_detail.html:3
+msgid "Hilo"
+msgstr ""
+
+#: .\messenger\templates\messenger\thread_detail.html:37
+#: .\messenger\templates\messenger\thread_detail.html:59
+#: .\messenger\templates\messenger\thread_list.html:33
+msgid "Hace"
+msgstr ""
+
+#: .\messenger\templates\messenger\thread_detail.html:51
+msgid "Mensajes con"
+msgstr ""
+
+#: .\messenger\templates\messenger\thread_detail.html:65
+msgid "Escribe tu mensaje aquÃ­"
+msgstr ""
+
+#: .\messenger\templates\messenger\thread_detail.html:66
+#: .\profiles\templates\profiles\profile_detail.html:19
+msgid "Enviar mensaje"
+msgstr ""
+
+#: .\messenger\templates\messenger\thread_list.html:44
+msgid "Selecciona un hilo de conversaciÃ³n de tu panel izquierdo."
+msgstr ""
+
+#: .\profiles\templates\profiles\profile_list.html:23
+msgid "Ver perfil"
+msgstr ""
+
+#: .\registration\templates\registration\login.html:3
+#: .\registration\templates\registration\login.html:14
+#: .\registration\templates\registration\password_reset_complete.html:11
+msgid "Iniciar sesiÃ³n"
+msgstr ""
+
+#: .\registration\templates\registration\login.html:11
+msgid "Te has registrado correctamente. Ya puedes acceder con tu usuario"
+msgstr ""
+
+#: .\registration\templates\registration\login.html:16
+msgid "Usuario o contraseÃ±a incorrectos, prueba de nuevo."
+msgstr ""
+
+#: .\registration\templates\registration\login.html:20
+msgid "Nombre de usuario"
+msgstr ""
+
+#: .\registration\templates\registration\login.html:24
+msgid "ContraseÃ±a"
+msgstr ""
+
+#: .\registration\templates\registration\login.html:28
+msgid "Â¿Ha olvidado su clave? Puede restaurarla"
+msgstr ""
+
+#: .\registration\templates\registration\login.html:28
+#: .\registration\templates\registration\password_change_done.html:10
+#: .\registration\templates\registration\password_reset_confirm.html:22
+#: .\registration\templates\registration\profile_form.html:29
+#: .\registration\templates\registration\profile_form.html:30
+msgid "aquÃ­"
+msgstr ""
+
+#: .\registration\templates\registration\password_change_done.html:3
+#: .\registration\templates\registration\password_change_done.html:9
+msgid "ContraseÃ±a cambiada correctamente"
+msgstr ""
+
+#: .\registration\templates\registration\password_change_done.html:10
+msgid "Puedes volver a tu perfil haciendo clic"
+msgstr ""
+
+#: .\registration\templates\registration\password_change_form.html:3
+#: .\registration\templates\registration\password_change_form.html:11
+msgid "Cambio de contraseÃ±a"
+msgstr ""
+
+#: .\registration\templates\registration\password_change_form.html:12
+msgid ""
+"Por favor, introduzca su contraseÃ±a antigua por seguridad, y despuÃ©s "
+"introduzca dos veces la nueva contraseÃ±a para verificar que la ha escrito "
+"correctamente."
+msgstr ""
+
+#: .\registration\templates\registration\password_change_form.html:14
+msgid "ContraseÃ±a antigua"
+msgstr ""
+
+#: .\registration\templates\registration\password_change_form.html:16
+msgid "ContraseÃ±a nueva"
+msgstr ""
+
+#: .\registration\templates\registration\password_change_form.html:18
+msgid "ContraseÃ±a nueva (confirmaciÃ³n)"
+msgstr ""
+
+#: .\registration\templates\registration\password_change_form.html:19
+#: .\registration\templates\registration\password_reset_confirm.html:18
+msgid "Cambiar mi contraseÃ±a"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_complete.html:3
+#: .\registration\templates\registration\password_reset_complete.html:9
+msgid "Restablecimiento de contraseÃ±a completado"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_complete.html:10
+msgid ""
+"Su contraseÃ±a ha sido establecida. Ahora puede seguir adelante e iniciar "
+"sesiÃ³n."
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_confirm.html:3
+#: .\registration\templates\registration\password_reset_confirm.html:12
+msgid "Escriba la nueva contraseÃ±a"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_confirm.html:13
+msgid ""
+"Por favor, introduzca su contraseÃ±a nueva dos veces para verificar que la "
+"ha escrito correctamente."
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_confirm.html:15
+msgid "Introduce la nueva contraseÃ±a"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_confirm.html:17
+msgid "Repite la nueva contraseÃ±a"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_confirm.html:21
+msgid "Restablecimiento de contraseÃ±as fallido"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_confirm.html:22
+msgid ""
+"El enlace de restablecimiento de contraseÃ±a era invÃ¡lido, seguramente "
+"porque se haya usado antes. Por favor, solicite un nuevo restablecimiento de "
+"contraseÃ±a"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_done.html:3
+#: .\registration\templates\registration\password_reset_done.html:9
+msgid "Restablecimiento de contraseÃ±a enviado"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_done.html:10
+msgid ""
+"Le hemos enviado por email las instrucciones para restablecer la contraseÃ"
+"±a, si es que existe una cuenta con la direcciÃ³n electrÃ³nica que indicÃ³. "
+"DeberÃ­a recibirlas en breve."
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_done.html:11
+msgid ""
+"Si no recibe un correo, por favor asegÃºrese de que ha introducido la "
+"direcciÃ³n de correo con la que se registrÃ³ y verifique su carpeta de spam."
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_form.html:3
+#: .\registration\templates\registration\password_reset_form.html:11
+msgid "Restablecer contraseÃ±a"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_form.html:12
+msgid ""
+"Â¿Ha olvidado su clave? Introduzca su direcciÃ³n de correo a continuaciÃ³n y "
+"le enviaremos por correo electrÃ³nico las instrucciones para establecer una "
+"nueva."
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_form.html:14
+msgid "Introduce tu email"
+msgstr ""
+
+#: .\registration\templates\registration\password_reset_form.html:15
+#: .\registration\templates\registration\signup.html:13
+msgid "Confirmar"
+msgstr ""
+
+#: .\registration\templates\registration\profile_email_form.html:3
+#: .\registration\templates\registration\profile_email_form.html:11
+msgid "Email"
+msgstr ""
+
+#: .\registration\templates\registration\profile_email_form.html:13
+#: .\registration\templates\registration\profile_form.html:32
+msgid "Actualizar"
+msgstr ""
+
+#: .\registration\templates\registration\profile_form.html:16
+msgid "Â¿Borrar?"
+msgstr ""
+
+#: .\registration\templates\registration\profile_form.html:29
+msgid "Si deseas editar tu email, haz clic"
+msgstr ""
+
+#: .\registration\templates\registration\profile_form.html:30
+msgid "Y si quieres cambiar tu contraseÃ±a, haz clic"
+msgstr ""
+
+#: .\scripts\templates\scripts\includes\scripts_menu.html:8
+#: .\tools\templates\tools\includes\tools_menu.html:8
+#: .\victimas\templates\victimas\includes\victimas_menu.html:8
+msgid "Administrar"
+msgstr ""
+
+#: .\scripts\templates\scripts\includes\scripts_menu.html:16
+msgid "Crear scripts"
+msgstr ""
+
+#: .\scripts\templates\scripts\includes\scripts_menu.html:20
+msgid "Lista de scripts"
+msgstr ""
+
+#: .\scripts\templates\scripts\script_confirm_delete.html:3
+msgid "Borrar script"
+msgstr ""
+
+#: .\scripts\templates\scripts\script_confirm_delete.html:12
+#: .\tools\templates\tools\tool_confirm_delete.html:12
+#: .\victimas\templates\victimas\victima_confirm_delete.html:12
+msgid "Â¿EstÃ¡s seguro de que quieres borrar"
+msgstr ""
+
+#: .\scripts\templates\scripts\script_confirm_delete.html:13
+msgid "SÃ­, borrar el script"
+msgstr ""
+
+#: .\scripts\templates\scripts\script_detail.html:22
+#: .\scripts\templates\scripts\script_list.html:27
+#: .\tools\templates\tools\tool_detail.html:22
+#: .\tools\templates\tools\tool_list.html:27
+#: .\victimas\templates\victimas\victima_detail.html:22
+#: .\victimas\templates\victimas\victima_list.html:27
+msgid "Editar"
+msgstr ""
+
+#: .\scripts\templates\scripts\script_detail.html:23
+#: .\scripts\templates\scripts\script_list.html:28
+#: .\tools\templates\tools\tool_detail.html:23
+#: .\tools\templates\tools\tool_list.html:28
+#: .\victimas\templates\victimas\victima_detail.html:23
+#: .\victimas\templates\victimas\victima_list.html:28
+msgid "Borrar"
+msgstr ""
+
+#: .\scripts\templates\scripts\script_form.html:3
+#: .\scripts\templates\scripts\script_form.html:13
+msgid "Crear script"
+msgstr ""
+
+#: .\scripts\templates\scripts\script_update_form.html:3
+#: .\scripts\templates\scripts\script_update_form.html:20
+msgid "Actualizar script"
+msgstr ""
+
+#: .\scripts\templates\scripts\script_update_form.html:13
+msgid "Script editado correctamente."
+msgstr ""
+
+#: .\scripts\templates\scripts\script_update_form.html:14
+#: .\tools\templates\tools\tool_update_form.html:14
+#: .\victimas\templates\victimas\victima_update_form.html:14
+msgid "Haz click para ver el resultado"
+msgstr ""
+
+#: .\tools\templates\tools\includes\tools_menu.html:16
+#: .\tools\templates\tools\tool_form.html:3
+#: .\tools\templates\tools\tool_form.html:13
+msgid "Crear herramienta"
+msgstr ""
+
+#: .\tools\templates\tools\includes\tools_menu.html:20
+msgid "Lista de herramientas"
+msgstr ""
+
+#: .\tools\templates\tools\tool_confirm_delete.html:3
+msgid "Borrar herramienta"
+msgstr ""
+
+#: .\tools\templates\tools\tool_confirm_delete.html:13
+msgid "SÃ­, borrar la herramienta"
+msgstr ""
+
+#: .\tools\templates\tools\tool_update_form.html:3
+#: .\tools\templates\tools\tool_update_form.html:20
+msgid "Actualizar herramienta"
+msgstr ""
+
+#: .\tools\templates\tools\tool_update_form.html:13
+msgid "Herramienta editada correctamente."
+msgstr ""
+
+#: .\victimas\templates\victimas\includes\victimas_menu.html:20
+msgid "Lista de objetivos"
+msgstr ""
+
+#: .\victimas\templates\victimas\victima_confirm_delete.html:3
+msgid "Borrar objetivo"
+msgstr ""
+
+#: .\victimas\templates\victimas\victima_confirm_delete.html:13
+msgid "SÃ­, borrar el objetivo"
+msgstr ""
+
+#: .\victimas\templates\victimas\victima_update_form.html:3
+#: .\victimas\templates\victimas\victima_update_form.html:20
+msgid "Actualizar objetivo"
+msgstr ""
+
+#: .\victimas\templates\victimas\victima_update_form.html:13
+msgid "Objetivo editado correctamente."
+msgstr ""
