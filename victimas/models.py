@@ -22,8 +22,8 @@ class Victima(models.Model):
             return "/media/victimaimages/victima.png"
 
     class Meta:
-        verbose_name = "victima"
-        verbose_name_plural = "victimas"
+        verbose_name = "objetivo"
+        verbose_name_plural = "objetivos"
         ordering = ['order', 'title']
 
     def __str__(self):

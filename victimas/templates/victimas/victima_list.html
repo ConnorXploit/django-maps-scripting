@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
 {% load static i18n %}
-{% block title %}{% trans "Victimas" %}{% endblock %}
+{% block title %}{% trans "Objetivos" %}{% endblock %}
 {% block content %}
 {% include 'victimas/includes/victimas_menu.html' %}
 <main role="main">
@@ -22,10 +22,10 @@
           {% endif %}
           <div>
             <p>{{victima.content|striptags|safe|truncatechars:"200"}}</p>
-            <p><a href="{% url 'victimas:victima' victima.id victima.title|slugify %}" class="btn btn-primary btn-sm m-2 mt-3">{% trans 'Leer más' %}</a>
+            <p><a href="{% url 'objetivos:objetivo' victima.id victima.title|slugify %}" class="btn btn-primary btn-sm m-2 mt-3">{% trans 'Leer más' %}</a>
               {% if request.user.is_staff %}
-                <a href="{% url 'victimas:update' victima.id %}" class="btn btn-info btn-sm m-2 mt-3">{% trans 'Editar' %}</a>
-                <a href="{% url 'victimas:delete' victima.id %}" class="btn btn-danger btn-sm m-2 mt-3">{% trans 'Borrar' %}</a>
+                <a href="{% url 'objetivos:update' victima.id %}" class="btn btn-info btn-sm m-2 mt-3">{% trans 'Editar' %}</a>
+                <a href="{% url 'objetivos:delete' victima.id %}" class="btn btn-danger btn-sm m-2 mt-3">{% trans 'Borrar' %}</a>
               {% endif %}
             </p>
           </div>

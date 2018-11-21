@@ -4,7 +4,16 @@
 <div class="container ontainer-fluid mb-4 mt-4">
   <div class="row">
     <div class="col-md-4">
-      <h2>{% trans "Victimas" %}</h2>
+      <h2>{% trans "Objetivos" %}</h2>
+      {% if request.user.is_staff %}
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="{% url 'objetivos:create' %}" class="btn btn-success btn-sm btn-block mt-3">{% trans 'Nuevo objetivo' %}</a>
+            </li>
+          </ul>
+        </div>
+      {% endif %}
       {% if victimas_list %}
         <hr>
         {% for victima in victimas_list|dictsort:"id" reversed %}
@@ -16,7 +25,7 @@
                   {% if victima.link %}
                     <a href="{{ victima.link }}" target="_blank">
                   {% else %}
-                    <a href="{% url 'victimas:victima' victima.id victima.title|slugify %}">
+                    <a href="{% url 'objetivos:objetivo' victima.id victima.title|slugify %}">
                   {% endif %}
                   {% if victima.imagen_url == "/media/victimaimages/victima.png" %}
                     <img src="{{ victima.imagen_url }}" alt="Avatar" style="width: 60px; height: 60px;" class="mb-1"></a>
@@ -25,7 +34,7 @@
                   {% endif %}
                 </p>
                 <p>{{victima.content|safe|truncatechars:"100"}}</p>
-                <p><a href="{% url 'victimas:victima' victima.id victima.title|slugify %}" class="btn btn-primary btn-sm btn-block mt-3">{% trans "Leer más" %}</a></p>
+                <p><a href="{% url 'objetivos:objetivo' victima.id victima.title|slugify %}" class="btn btn-primary btn-sm btn-block mt-3">{% trans "Leer más" %}</a></p>
               </div>
             </div>
           </div>
@@ -34,22 +43,21 @@
         <div class="row mt-3">
           <div class="col-md-9 mx-auto">
             <h3 class="mb-4">{% trans "No hay ninguna víctima en la lista" %}</h3>
-            <div>
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a href="{% url 'victimas:create' %}" class="btn btn-success btn-sm btn-block mt-3">{% trans 'Crear victimas' %}</a>
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'victimas:victimas' %}" class="btn btn-warning btn-sm btn-block mt-3">{% trans 'Listar victimas' %}</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       {% endif %}
     </div>
     <div class="col-md-4">
       <h2>{% trans "Scripts" %}</h2>
+      {% if request.user.is_staff %}
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="{% url 'scripts:create' %}" class="btn btn-success btn-sm btn-block mt-3">{% trans 'Nuevo script' %}</a>
+            </li>
+          </ul>
+        </div>
+      {% endif %}
       {% if scripts_list %}
         <hr>
         {% for script in scripts_list|dictsort:"id" reversed %}
@@ -80,23 +88,22 @@
         <div class="row mt-3">
           <div class="col-md-9 mx-auto">
             <h3 class="mb-4">{% trans "No hay ningun script en la lista" %}</h3>
-            <div>
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'scripts:create' %}"><i>{% trans 'Crear victimas' %}</i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'scripts:scripts' %}"><i>{% trans 'Listar victimas' %}</i></a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       {% endif %}
     </div>
     <div class="col-md-4">
       <h2>{% trans "Herramientas" %}</h2>
-      {% if scripts_list %}
+      {% if request.user.is_staff %}
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="{% url 'tools:create' %}" class="btn btn-success btn-sm btn-block mt-3">{% trans 'Nueva herramienta' %}</a>
+            </li>
+          </ul>
+        </div>
+      {% endif %}
+      {% if tools_list %}
         <hr>
         {% for tool in tools_list|dictsort:"id" reversed %}
           <div class="row mt-3">
@@ -126,16 +133,6 @@
         <div class="row mt-3">
           <div class="col-md-9 mx-auto">
             <h3 class="mb-4">{% trans "No hay ninguna herramienta en la lista" %}</h3>
-            <div>
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'tools:create' %}"><i>{% trans 'Crear herramientas' %}</i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'tools:tools' %}"><i>{% trans 'Listar herramientas' %}</i></a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       {% endif %}

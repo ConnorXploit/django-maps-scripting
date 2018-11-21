@@ -27,7 +27,7 @@ class VictimaDetailView(DetailView):
 class VictimaCreate(CreateView):
     model = Victima
     form_class = VictimaForm
-    success_url = reverse_lazy('victimas:victimas')
+    success_url = reverse_lazy('objetivos:objetivos')
 
 @method_decorator(staff_member_required, name='dispatch')
 class VictimaUpdate(UpdateView):
@@ -36,9 +36,9 @@ class VictimaUpdate(UpdateView):
     template_name_suffix = '_update_form'
     
     def get_success_url(self):
-        return reverse_lazy('victimas:update', args=[self.object.id]) + '?ok'
+        return reverse_lazy('objetivos:update', args=[self.object.id]) + '?ok'
 
 @method_decorator(staff_member_required, name='dispatch')
 class VictimaDelete(DeleteView):
     model = Victima
-    success_url = reverse_lazy('victimas:victimas')
+    success_url = reverse_lazy('objetivos:objetivos')

@@ -140,7 +140,7 @@ STATIC_URL = '/static/'
 
 # Auth Redirects
 # LOGIN_REDIRECT_URL = 'pages:pages'
-LOGOUT_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'inicio:inicio'
 
 # Emails
 if DEBUG:

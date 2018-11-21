@@ -13,11 +13,11 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             {% url 'victimas:create' as victimas_create %}
-            <a class="nav-link {% if request.path == victimas_create %}active{% endif %}" href="{% url 'victimas:create' %}"><i>{% trans "Crear victimas" %}</i></a>
+            <a class="nav-link {% if request.path == victimas_create %}active{% endif %}" href="{% url 'objetivos:create' %}"><i>{% trans "Crear objetivo" %}</i></a>
           </li>
           <li class="nav-item">
               {% url 'victimas:victimas' as victimas_victimas %}
-            <a class="nav-link {% if request.path == victimas_victimas %}active{% endif %}" href="{% url 'victimas:victimas' %}"><i>{% trans "Lista de victimas" %}</i></a>
+            <a class="nav-link {% if request.path == victimas_victimas %}active{% endif %}" href="{% url 'objetivos:objetivos' %}"><i>{% trans "Lista de objetivos" %}</i></a>
           </li>
         </ul>
       </div>

@@ -36,7 +36,7 @@ urlpatterns += i18n_patterns(
     # Paths de Home
     path('', include(inicio_patterns)),
     #path(_('admin/'), admin.site.urls),
-    path('victimas/', include(victimas_patterns)),
+    path('objetivos/', include(victimas_patterns)),
     # Paths de Auth
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('registration.urls')),
