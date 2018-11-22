@@ -1,4 +1,5 @@
-﻿alabaster==0.7.10
+setuptools
+alabaster==0.7.10
 anaconda-client
 anaconda-project
 appdirs==1.4.3
