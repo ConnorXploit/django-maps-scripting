@@ -18,21 +18,27 @@ Clone it from git
 
 Make sure you run pip command and manage.py using an environment based on **python==3.6.0**. For example:
 
-    conda create -n django2env python==3.6.0
+For using this especific environmet, you have to use this command:
+
+    conda env create -f environment.yaml
+
+Or create a empty environment
+
+    conda create -n yourEnvName python==3.6.0
     
 This creates and environment for our packages to be installed. We have to activate now that environment and start installing whatever we need. In our case, we have all at requirements.txt
 
 ## VirtualEnv Windows
 
-    activate django2env
+    activate yourEnvName
     
 ## VirtualEnv Linux
 
-    source activate django2env
+    source activate yourEnvName
     
 ## Requirements
     
-Now, our shell should change a bit and start by **(django2env)** /your/working/directory.
+Now, our shell should change a bit and start by **(yourEnvName)** /your/working/directory.
 
 At this moment we are working in the virtual environment that we want to work in. Start installing all the requirements:
 
