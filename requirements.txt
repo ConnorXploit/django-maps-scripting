@@ -111,7 +111,7 @@ numba==0.38.0
 numexpr==2.6.5
 numpy==1.14.3
 numpydoc==0.8.0
-odo==0.5.1
+odo
 olefile==0.45.1
 openpyxl==2.5.3
 packaging==17.1
