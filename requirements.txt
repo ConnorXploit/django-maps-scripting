@@ -129,7 +129,7 @@ ply==3.11
 port-for==0.3.1
 prometheus-client==0.3.1
 prompt-toolkit==1.0.15
-psutil==5.4.5
+psutil==5.6.6
 psycopg2==2.7.5
 py==1.5.3
 pyasn1==0.4.4
