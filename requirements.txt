@@ -37,7 +37,7 @@ dask==0.17.5
 datashape
 decorator==4.3.0
 distributed==1.21.8
-Django==2.0.2
+Django==2.2.13
 django-ckeditor==5.6.1
 django-filter==2.0.0
 django-geojson==2.11.0
