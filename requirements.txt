@@ -45,7 +45,7 @@ django-js-asset==1.1.0
 django-leaflet==0.24.0
 django-map-widgets==0.1.9
 django-postgresql==0.0.3
-djangorestframework==3.8.2
+djangorestframework==3.11.2
 djangorestframework-gis==0.13
 docutils==0.14
 entrypoints==0.2.3
