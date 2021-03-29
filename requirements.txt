@@ -140,7 +140,7 @@ pycparser==2.18
 pycrypto
 pycurl
 pyflakes==1.6.0
-Pygments==2.2.0
+Pygments==2.7.4
 pylint==2.1.1
 pylint-django==2.0.2
 pylint-plugin-utils==0.4
